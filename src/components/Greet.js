@@ -6,11 +6,11 @@ import React from "react";
 
 //Arrow Function Instead
 
-const Greet = (props) => {
-    console.log(props)
+const Greet = props => {
+    const {name} = props
     return (
         <>
-            <h1 className="title">Hello {props.name}!</h1>
+            <h1 className="title">Hellow {name}!</h1>
             {props.children}
         </>
     )
