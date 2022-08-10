@@ -35,7 +35,7 @@ class Portfolio extends Component {
   </div>
 
   <div className="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
+    <div className="w3-col m3">
       {/* <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist"/> */}
     </div>
 
@@ -56,8 +56,8 @@ class Portfolio extends Component {
 
 /
 <div id="modal01" className="w3-modal w3-black" >
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i className="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+  <span className="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i className="fa fa-remove"></i></span>
+  <div className="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     {/* <img id="img01" class="w3-image"/> */}
     <p id="caption" className="w3-opacity w3-large"></p>
   </div>
