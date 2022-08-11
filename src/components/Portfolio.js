@@ -54,7 +54,7 @@ class Portfolio extends Component {
   </div>
 </div>
 
-/
+
 <div id="modal01" className="w3-modal w3-black" >
   <span className="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i className="fa fa-remove"></i></span>
   <div className="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">

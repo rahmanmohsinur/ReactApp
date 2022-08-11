@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Skills from "./Skills";
 
 class About extends Component {
     render() {
@@ -29,19 +30,8 @@ class About extends Component {
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
-  <p className="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p className="w3-wide"><i className="fa fa-camera"></i>Photography</p>
-  <div className="w3-light-grey">
-    <div className="w3-container w3-padding-small w3-dark-grey w3-center">90%</div>
-  </div>
-  <p className="w3-wide"><i className="fa fa-laptop"></i>Web Design</p>
-  <div className="w3-light-grey">
-    <div className="w3-container w3-padding-small w3-dark-grey w3-center">85%</div>
-  </div>
-  <p className="w3-wide"><i className="fa fa-photo"></i>Photoshop</p>
-  <div className="w3-light-grey">
-    <div className="w3-container w3-padding-small w3-dark-grey w3-center">75%</div>
-  </div>
+  {/* Skills Component */}
+  <Skills />
 </div>
 
 <div className="w3-row w3-center w3-dark-grey w3-padding-16">
