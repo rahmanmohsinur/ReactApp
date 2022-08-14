@@ -24,6 +24,7 @@ class Contact extends Component {
     }
 
     handleFormSubmit = event => {
+        // window.open(`mailto:mixedbyinstinct@gmail.com?subject=${subject}&body=${body}`);
         alert(`${this.state.username} ${this.state.email} sent a message as: ${this.state.comments}`)
         event.preventDefault()
     }
