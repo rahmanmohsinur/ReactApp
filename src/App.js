@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Greet from './components/Greet';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import About from './components/About';

@@ -1,35 +1,9 @@
 import React, {Component} from "react";
+import ContactForm from "./ContactForm";
+import ErrorBoundary from "./ErrorBoundary";
 
 class Contact extends Component {
-
-    constructor(props){
-        super(props)
-        this.state = {
-            username: '',
-            email: '',
-            comments: ''
-        }
-    }
-
-    handleUsernameChange = (event) => {
-        this.setState({username: event.target.value})
-    }
-
-    handleEmailChange = (event) => {
-        this.setState({email: event.target.value})
-    }
-
-    handleCommentsChange = (event) => {
-        this.setState({comments: event.target.value})
-    }
-
-    handleFormSubmit = event => {
-        // window.open(`mailto:mixedbyinstinct@gmail.com?subject=${subject}&body=${body}`);
-        alert(`${this.state.username} ${this.state.email} sent a message as: ${this.state.comments}`)
-        event.preventDefault()
-    }
     render() {
-        const {username, email, comments} = this.state
         return(
             <>
             {/* <!-- Third Parallax Image with Portfolio Text --> */}
@@ -54,29 +28,10 @@ class Contact extends Component {
                             <i className="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Email: mohsin@euroshopbd.com<br/>
                         </div>
                         <p>Swing by for a cup of <i className="fa fa-coffee"></i>, or leave me a note:</p>
-                        <form id="frmContact" onSubmit={this.handleFormSubmit}>
-                            <div className="w3-row-padding">
-                                <div className="w3-half w3-margin-bottom">
-                                    <input className="w3-input w3-border" type="text" 
-                                    value={username} 
-                                    onChange = {this.handleUsernameChange}
-                                    placeholder="Name" required name="Name"/>
-                                </div>
-                                <div className="w3-half w3-margin-bottom">
-                                    <input className="w3-input w3-border" type="text" 
-                                    value = {email}
-                                    onChange = {this.handleEmailChange}
-                                    placeholder="Email" required name="Email"/>
-                                </div>
-                            </div>
-                            <input className="w3-input w3-border" type="text" 
-                                    value = {comments}
-                                    onChange = {this.handleCommentsChange}
-                                    placeholder="Message" required name="Message"/>
-                            <button className="w3-button w3-black w3-right w3-section" type="submit">
-                                <i className="fa fa-paper-plane"></i> SEND MESSAGE
-                            </button>
-                        </form>
+                        
+                        <ErrorBoundary>
+                            <ContactForm />
+                        </ErrorBoundary>
                     </div>
                 </div>
             </div>

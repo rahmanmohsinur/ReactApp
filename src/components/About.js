@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import ContactDemo from "./ContactDemo";
 import ErrorBoundary from "./ErrorBoundary";
 import Skills from "./Skills";
 
@@ -34,9 +33,6 @@ class About extends Component {
   </div>
   {/* Skills Component */}
   <Skills />
-  <ErrorBoundary>
-      <ContactDemo />
-  </ErrorBoundary>
  
 </div>
 
