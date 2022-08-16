@@ -22,10 +22,10 @@ class Contact extends Component {
                     </div>
                     <div className="w3-col m8 w3-panel">
                         <div className="w3-large w3-margin-bottom">
-                            <i className="fa fa-briefcase fa-fw w3-hover-text-black w3-large w3-margin-right"></i> IT Manager<br/>
-                            <i className="fa fa-home fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Canary Wharf, London, UK<br/>
-                            <i className="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Phone: +44 7459820285<br/>
-                            <i className="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Email: mohsin@euroshopbd.com<br/>
+                            <i className="fa fa-briefcase fa-fw w3-text-teal w3-opacity w3-hover-opacity-off w3-large w3-margin-right"></i> IT Manager<br/>
+                            <i className="fa fa-home fa-fw w3-text-teal w3-opacity w3-hover-opacity-off w3-large w3-margin-right"></i> Canary Wharf, London, UK<br/>
+                            <i className="fa fa-phone fa-fw w3-text-teal w3-opacity w3-hover-opacity-off w3-large w3-margin-right"></i> Phone: +44 7459820285<br/>
+                            <i className="fa fa-envelope fa-fw w3-text-teal w3-opacity w3-hover-opacity-off w3-large w3-margin-right"></i> Email: mohsin@euroshopbd.com<br/>
                         </div>
                         <p>Swing by for a cup of <i className="fa fa-coffee"></i>, or leave me a note:</p>
                         

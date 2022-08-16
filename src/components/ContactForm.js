@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
                 value={this.state.message} placeholder="Message"
                 onChange={this.onMessageChange} required />
               </div>
-              <button type="submit" className="w3-button w3-black w3-right w3-section">
+              <button type="submit" className="w3-button w3-teal w3-hover-teal w3-opacity w3-hover-opacity-off w3-right w3-section">
                 <i className="fa fa-paper-plane"></i> SEND MESSAGE
               </button>
           </form>

@@ -4,7 +4,9 @@ body, html {
   color: #777;
   line-height: 1.8;
 }
-      
+
+.w3-row { margin: 0 -24px; }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
