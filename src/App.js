@@ -16,7 +16,7 @@ class App extends React.Component {
                 {/* <div className="App"> */}
 
                 <ErrorBoundary>
-                    <Header />
+                    {/* <Header /> */}
                 </ErrorBoundary>
 
                 <ErrorBoundary>

@@ -32,7 +32,9 @@ class About extends Component {
                         </div>
                     </div>
                     {/* Skills Component */}
-                    <Skills />
+                    <ErrorBoundary>
+                        <Skills />
+                    </ErrorBoundary>
  
                 </div>
 
