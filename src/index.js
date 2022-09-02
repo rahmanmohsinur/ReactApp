@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import Portfolio from './pages/Portfolio';
+import About from './pages/About';
 
 export default function Menu() {
   return (
@@ -17,8 +19,10 @@ export default function Menu() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="portfolio" element={<Portfolio />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
@@ -33,7 +37,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

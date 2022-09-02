@@ -1,5 +1,21 @@
+
+import Contactme from "../components/Contactme";
+import ErrorBoundary from "../components/ErrorBoundary";
+import {useDocTitle} from "../components/DocTitle"
+
+document.title = "Contact | Mohsinur Rahman";
+
 const Contact = () => {
-    return <h1>Contact Me</h1>;
+  const [doctitle, setDocTitle] = useDocTitle("Contact With Mohsinur Rahman");
+    return  (
+      
+      <>
+
+<ErrorBoundary>
+    <Contactme />
+</ErrorBoundary>
+</>
+  );
   };
   
   export default Contact;

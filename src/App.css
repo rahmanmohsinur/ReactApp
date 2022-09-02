@@ -6,6 +6,10 @@ body, html {
 }
 
 .w3-row { margin: 0 -24px; }
+.mr-5 { margin-right: 5px; }
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {

@@ -1,8 +1,14 @@
 import React, {Component} from "react";
-import ErrorBoundary from "./ErrorBoundary";
-import Skills from "./Skills";
+import ErrorBoundary from "../components/ErrorBoundary";
+import Skills from "../components/Skills";
+import Social from "../components/Social";
+
+
 
 class About extends Component {
+    componentDidMount() {
+        document.title = "About Mohsinur Rahman"; 
+    }
     render() {
         return(
             <>
@@ -10,6 +16,9 @@ class About extends Component {
                     <div className="w3-display-middle">
                         <span className="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span className="w3-hide-small">WEBSITE</span> LOGO</span>
                     </div>
+                    <ErrorBoundary>
+                        <Social />
+                    </ErrorBoundary>
                 </div>
 
                 <div className="w3-content w3-container w3-padding-64" id="about">
@@ -21,9 +30,8 @@ class About extends Component {
                     <div className="w3-row">
                         <div className="w3-col m6 w3-center w3-padding-large">
                             <p><b><i className="fa fa-user w3-margin-right"></i>My Name</b></p><br/>
-                            <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="img" />
+                            <img src="../../img/avatar_hat.jpg" className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="img" />
                         </div>
-
     
                         <div className="w3-col m6 w3-hide-small w3-padding-large">
                             <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -31,33 +39,29 @@ class About extends Component {
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    {/* Skills Component */}
                     <ErrorBoundary>
                         <Skills />
                     </ErrorBoundary>
- 
                 </div>
 
-<div className="w3-row w3-center w3-teal w3-opacity w3-hover-opacity-off w3-padding-16">
-  <div className="w3-quarter w3-section">
-    <span className="w3-xlarge">14+</span><br/>
-    Partners
-  </div>
-  <div className="w3-quarter w3-section">
-    <span className="w3-xlarge">55+</span><br/>
-    Projects Done
-  </div>
-  <div className="w3-quarter w3-section">
-    <span className="w3-xlarge">89+</span><br/>
-    Happy Clients
-  </div>
-  <div className="w3-quarter w3-section">
-    <span className="w3-xlarge">150+</span><br/>
-    Meetings
-  </div>
-</div>
-
-            
+                <div className="w3-row w3-center w3-teal w3-opacity w3-hover-opacity-off w3-padding-16">
+                    <div className="w3-quarter w3-section">
+                        <span className="w3-xlarge">14+</span><br/>
+                        Partners
+                    </div>
+                    <div className="w3-quarter w3-section">
+                        <span className="w3-xlarge">55+</span><br/>
+                        Projects Done
+                    </div>
+                    <div className="w3-quarter w3-section">
+                        <span className="w3-xlarge">89+</span><br/>
+                        Happy Clients
+                    </div>
+                    <div className="w3-quarter w3-section">
+                        <span className="w3-xlarge">150+</span><br/>
+                        Meetings
+                    </div>
+                </div>
             </>
         );
     }

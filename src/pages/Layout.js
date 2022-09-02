@@ -1,4 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
+import ErrorBoundary from "../components/ErrorBoundary";
+import Footer from "../components/Footer";
 
 // Modal Image Gallery
 function onClick(element) {
@@ -30,51 +32,38 @@ function toggleFunction() {
 }
 
 const Layout = () => {
-  return (
-    <>
-      <div className="w3-top">
-        <div className="w3-bar w3-text-teal" id="myNavbar">
-            <Link to="#" className="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" 
-            onClick={toggleFunction} title="Toggle Navigation Menu">
-                <i className="fa fa-bars"></i>
-            </Link>
-            <Link to="/" className="w3-bar-item w3-button">HOME</Link>
-            <Link to="#about" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-user"></i> ABOUT</Link>
-            <Link to="/blogs" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-th"></i> PORTFOLIO</Link>
-            <Link to="/contact" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-envelope"></i> CONTACT</Link>
-            <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i className="fa fa-search"></i>
-            </Link>
-        </div>
+    return (
+        <>
+            <div className="w3-top">
+                <div className="w3-bar w3-text-teal" id="myNavbar">
+                    <Link to="#" className="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" 
+                    onClick={toggleFunction} title="Toggle Navigation Menu">
+                        <i className="fa fa-bars"></i>
+                    </Link>
+                    <Link to="/" className="w3-bar-item w3-button"><i className="fa fa-home"></i> HOME</Link>
+                    <Link to="/about" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-user-o"></i> ABOUT</Link>
+                    <Link to="/portfolio" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-th"></i> PORTFOLIO</Link>
+                    <Link to="/contact" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-envelope-o"></i> CONTACT</Link>
+                    <Link to="/blogs" className="w3-bar-item w3-button w3-hide-small"><i className="fa fa-pencil-square-o"></i> BLOG</Link>
+                    <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                        <i className="fa fa-search"></i>
+                    </Link>
+                </div>
 
-        <div id="navDemo" className="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <Link to="/" className="w3-bar-item w3-button" onClick={toggleFunction}>ABOUT</Link>
-            <Link to="/blogs" className="w3-bar-item w3-button" onClick={toggleFunction}>PORTFOLIO</Link>
-            <Link to="/contact" className="w3-bar-item w3-button" onClick={toggleFunction}>CONTACT</Link>
-            <Link to="#" className="w3-bar-item w3-button">SEARCH</Link>
-        </div>
-      </div>
-      <Outlet />
-    </>
-
-    // <>
-    //   <nav>
-    //     <ul>
-    //       <li>
-    //         <Link to="/" className="do">Home</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/blogs">Blogs</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/contact">Contact</Link>
-    //       </li>
-    //     </ul>
-    //   </nav>
-
-    //   <Outlet />
-    // </>
-  )
+                <div id="navDemo" className="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                    <Link to="/about" className="w3-bar-item w3-button" onClick={toggleFunction}>ABOUT</Link>
+                    <Link to="/portfolio" className="w3-bar-item w3-button" onClick={toggleFunction}>PORTFOLIO</Link>
+                    <Link to="/contact" className="w3-bar-item w3-button" onClick={toggleFunction}>CONTACT</Link>
+                    <Link to="/blogs" className="w3-bar-item w3-button" onClick={toggleFunction}>BLOG</Link>
+                    <Link to="#" className="w3-bar-item w3-button">SEARCH</Link>
+                </div>
+            </div>
+            <Outlet />
+            <ErrorBoundary>
+                <Footer />
+            </ErrorBoundary>
+        </>
+    )
 };
 
 export default Layout;

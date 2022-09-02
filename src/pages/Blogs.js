@@ -1,5 +1,15 @@
+import Home from "./Home";
+import {useDocTitle} from "../components/DocTitle"
+
 const Blogs = () => {
-    return <h1>Blog Articles</h1>;
-  };
+  const [doctitle, setDocTitle] = useDocTitle("Blog Posts of Mohsinur Rahman");
   
-  export default Blogs;
+    return (
+        <>
+            
+            <Home />
+        </>
+    );
+};
+  
+export default Blogs;

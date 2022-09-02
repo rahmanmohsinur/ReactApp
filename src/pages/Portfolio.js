@@ -1,6 +1,10 @@
 import React, {Component} from "react";
 
+
 class Portfolio extends Component {
+    componentDidMount() {
+        document.title = "Portfolio of Mohsinur Rahman"; 
+    }
     render() {
         return(
             <>

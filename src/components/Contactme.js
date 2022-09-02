@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import ContactForm from "./ContactForm";
 import ErrorBoundary from "./ErrorBoundary";
 
-class Contact extends Component {
+class Contactme extends Component {
     render() {
         return(
             <>
@@ -18,7 +18,7 @@ class Contact extends Component {
                 <p className="w3-center"><em>I'd love your feedback!</em></p>
                 <div className="w3-row w3-padding-32 w3-section">
                     <div className="w3-col m4 w3-container">
-                        <img src="/img/parallax1.jpg" className="w3-image w3-round" alt="img" />
+                        <img src="../../img/map.jpg" className="w3-image w3-round" alt="img" />
                     </div>
                     <div className="w3-col m8 w3-panel">
                         <div className="w3-large w3-margin-bottom">
@@ -40,4 +40,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default Contactme;
