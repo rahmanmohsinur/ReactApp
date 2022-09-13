@@ -6,12 +6,12 @@ import Portfolio from "./Portfolio";
 import {useDocTitle} from "../components/DocTitle"
 
 
-const Home = () => {
+const Home = (props) => {
     const [doctitle, setDocTitle] = useDocTitle("Home Page | Mohsinur Rahman");
     return (
         <>
             <ErrorBoundary>
-                <About />
+                <About title={props.title} siteName={props.siteName} />
             </ErrorBoundary>
 
             <ErrorBoundary>

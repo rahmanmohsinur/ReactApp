@@ -5,6 +5,8 @@ body, html {
   line-height: 1.8;
 }
 
+a, a:link { text-decoration: none; }
+a:hover { color: #009688; }
 .w3-row { margin: 0 -24px; }
 .mr-5 { margin-right: 5px; }
 .mr-10 { margin-right: 10px; }

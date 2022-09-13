@@ -1,13 +1,14 @@
 import Home from "./Home";
-import {useDocTitle} from "../components/DocTitle"
+import {useMetaTitle} from "../hooks/MetaTitle"
+import BlogPosts from "../components/BlogPosts";
 
 const Blogs = () => {
-  const [doctitle, setDocTitle] = useDocTitle("Blog Posts of Mohsinur Rahman");
+  const siteName = "Mohsinur Rahman"
+  const [title, setTitle] = useMetaTitle("Blog Posts");
   
     return (
         <>
-            
-            <Home />
+            <BlogPosts />
         </>
     );
 };
